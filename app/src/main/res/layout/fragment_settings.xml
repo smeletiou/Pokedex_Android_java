@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a limit for Pokémon data download (default: 20):"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/input_limit"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:inputType="number"
+        android:hint="Enter limit (optional)"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Pokemons" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This will download the specified number of Pokémon from the API and store it in Firestore."
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Pokemons" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This will delete all Pokémon data from Firestore."
+        android:paddingTop="8dp"/>
+
+</LinearLayout>
