@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tab Layout for Default and Shiny -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:tabGravity="fill"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_shiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shiny" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Pokémon Images in the same row -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/pokemon_image_front"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:contentDescription="Front Image of Pokemon" />
+
+                <ImageView
+                    android:id="@+id/pokemon_image_back"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:contentDescription="Back Image of Pokemon"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Pokémon Details -->
+
+            <TextView
+                android:id="@+id/pokemon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:text="ID" />
+
+            <TextView
+                android:id="@+id/pokemon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/pokemon_types"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="Types" />
+
+            <TextView
+                android:id="@+id/pokemon_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="Weight" />
+
+            <TextView
+                android:id="@+id/pokemon_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Height" />
+
+            <TextView
+                android:id="@+id/pokemon_base_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Base Experience" />
+
+            <TextView
+                android:id="@+id/pokemon_abilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="Abilities"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pokemon_held_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="Held Items"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pokemon_moves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:text="Moves"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
