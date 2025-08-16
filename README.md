@@ -4,29 +4,37 @@ This is a lightweight Pokédex Android application . It allows users to search, 
 
 ## 📱 Features
 
-- **Pokedex Home Page**
-  - Displays a list of all downloaded Pokémon.
-  - Includes a search bar that supports lookup by name or ID.
-  - Pokémon cards show their ID, name, type, and front sprite.
-  - Cards use a Pokéball XML background (sourced from GitHub).
+### 🔍 Pokedex Home Page
+- Displays a list of all downloaded Pokémon.
+- Includes a search bar that supports lookup by name or ID.
+- Pokémon cards show their ID, name, type, and front sprite.
+- Cards use a Pokéball XML background (sourced from GitHub).
 
-- **Details Page**
-  - Accessed by selecting a Pokémon from the list.
-  - Displays:
-    - ID, Name, Type, Weight, Height, Base Experience
-    - Abilities, Held Items (or a "No held items" message), and Moves
-  - Includes two tabs to toggle between **Normal** and **Shiny** versions using animated `.gif` sprites.
+<img width="544" height="391" alt="Pokedex Home" src="https://github.com/user-attachments/assets/ff31da20-bd6b-4882-a52d-ebfe2cb212a4" />
 
-- **Settings Page**
-  - Download Pokémon data from the PokeAPI.
-  - Choose how many Pokémon to fetch (default is 20 if left blank).
-  - Option to delete the Pokémon list from Firestore.
-  - Automatically sorts by ascending Pokémon ID.
+### 📄 Details Page
+- Accessed by selecting a Pokémon from the list.
+- Displays:
+  - ID, Name, Type, Weight, Height, Base Experience
+  - Abilities, Held Items (or a "No held items" message), and Moves
+- Includes two tabs to toggle between **Normal** and **Shiny** versions using animated `.gif` sprites.
 
-- **About Us Page**
-  - Displays brief info about the app.
+<img width="620" height="434" alt="Settings Page" src="https://github.com/user-attachments/assets/1770152d-7f13-4ebf-bc39-8eacfbb8e32b" />
+
+
+### ⚙️ Settings Page
+- Download Pokémon data from the PokeAPI.
+- Choose how many Pokémon to fetch (default is 20 if left blank).
+- Option to delete the Pokémon list from Firestore.
+- Automatically sorts by ascending Pokémon ID.
+
+<img width="373" height="401" alt="Pokemon Details" src="https://github.com/user-attachments/assets/470bbbad-fd13-4009-871c-769a77cc53d5" />
+
+### ℹ️ About Us Page
+- Displays brief info about the app and its purpose.
 
 ## 🔄 Data Handling
+
 
 - Data is fetched using the endpoint:
 https://pokeapi.co/api/v2/pokemon?limit={limit}&offset=0
